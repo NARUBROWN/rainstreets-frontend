@@ -65,19 +65,21 @@ nav {
 }
 
 #left {
-  background: #005db4;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 #right {
-  background: #005db4;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 img {
-  width: 50px;
+  width: 40px;
 }
 
 .menu {
-  width: 50px;
+  width: 40px;
   float: right;
 }
 
@@ -122,5 +124,15 @@ footer > h4 {
   text-align: center;
   color: #fcfcfc;
 }
+@media all and (min-width:1025px) {
+  #left {
+    padding-top: 5px;
+    padding-left: 60%;
+  }
 
+  #right {
+    padding-top: 5px;
+    padding-right: 60%;
+  }
+}
 </style>

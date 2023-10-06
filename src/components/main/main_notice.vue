@@ -15,6 +15,7 @@
 }
 
 h3 {
+  text-align: center;
   padding-top: 17px;
   padding-left: 20px;
   color: var(--blue-card-text);
