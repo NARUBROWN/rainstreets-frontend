@@ -1,10 +1,10 @@
 <script setup>
   import main_banner from "@/components/main/main_banner.vue"
-  import Main_notice from "@/components/main/main_notice.vue";
+  import Main_fullPage_banner from "@/components/main/main_fullPage_banner.vue";
 </script>
 
 <template>
-  <main_notice />
+  <main_fullPage_banner />
   <main_banner />
 </template>
 
