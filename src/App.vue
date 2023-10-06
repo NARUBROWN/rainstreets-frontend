@@ -58,19 +58,20 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 nav {
   width: 100%;
-  height: 20%;
+  height: 6vh;
   background-color: var(--card);
   display: grid;
   grid-template-columns: minmax(30px, 1fr) 2fr 1fr;
+  position: relative;
 }
 
 #left {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 10px;
 }
 
 #right {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-right: 10px;
 }
 
@@ -84,8 +85,8 @@ img {
 }
 
 ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block-start: 1.2em;
+  margin-block-end: 1.2em;
   text-align: center;
 }
 
@@ -126,12 +127,10 @@ footer > h4 {
 }
 @media all and (min-width:1025px) {
   #left {
-    padding-top: 5px;
     padding-left: 60%;
   }
 
   #right {
-    padding-top: 5px;
     padding-right: 60%;
   }
 }

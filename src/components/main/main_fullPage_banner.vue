@@ -21,10 +21,12 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: #005db4;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("@/assets/main/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #message {
@@ -66,7 +68,6 @@
   font-size: 15pt;
   text-align: center;
 }
-
 
 @media all and (min-width:1025px) {
   #message {
