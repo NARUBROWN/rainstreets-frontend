@@ -5,7 +5,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <nav>
     <div id="left">
-      <RouterLink to="/"><img class="logo" src="@/assets/logo.svg" alt="로고"></RouterLink>
+      <RouterLink to="/">
+        <img class="logo" src="@/assets/logo.svg" alt="로고">
+      </RouterLink>
+      <RouterLink to="/">
+        <h1 id="logoText">rainStreet</h1>
+      </RouterLink>
     </div>
     <ul>
       <RouterLink to="">메뉴1</RouterLink>
@@ -68,6 +73,7 @@ nav {
 #left {
   padding-top: 10px;
   padding-left: 10px;
+  display: flex;
 }
 
 #right {
@@ -125,6 +131,19 @@ footer > h4 {
   text-align: center;
   color: #fcfcfc;
 }
+
+#logoText {
+  margin-top: 7px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-weight: bolder;
+  font-size: 16pt;
+}
+
+a {
+  text-decoration-line: none;
+}
+
 @media all and (min-width:1025px) {
   #left {
     padding-left: 60%;
