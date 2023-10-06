@@ -4,9 +4,17 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <nav>
-    <RouterLink to="/"><img class="logo" src="@/assets/logo.svg" alt="로고"></RouterLink>
-    <RouterLink to="/"><img class="menu" src="@/assets/logo.svg" alt="로고"></RouterLink>
-    <RouterLink to="/"><img class="menu" src="@/assets/logo.svg" alt="로고"></RouterLink>
+    <div id="left">
+      <RouterLink to="/"><img class="logo" src="@/assets/logo.svg" alt="로고"></RouterLink>
+    </div>
+    <ul>
+      <RouterLink to="">메뉴1</RouterLink>
+      <RouterLink to="">메뉴2</RouterLink>
+      <RouterLink to="">메뉴3</RouterLink>
+    </ul>
+    <div id="right">
+      <RouterLink to="/"><img class="menu" src="@/assets/logo.svg" alt="로고"></RouterLink>
+    </div>
   </nav>
   <div class="view">
     <RouterView/>
@@ -52,17 +60,39 @@ nav {
   width: 100%;
   height: 20%;
   background-color: var(--card);
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) 2fr 1fr;
 }
 
-nav > a > img {
-  margin: 10px 0 10px 10px;
+#left {
+  background: #005db4;
+}
+
+#right {
+  background: #005db4;
+}
+
+img {
   width: 50px;
 }
 
 .menu {
-  float: right;
-  margin: 10px 10px 10px 10px;
   width: 50px;
+  float: right;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  text-align: center;
+}
+
+ul > a {
+  font-size: 13pt;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--text-color);
+  text-decoration-line: none;
 }
 
 .view {
@@ -83,7 +113,7 @@ footer > table {
   color: #fcfcfc;
 }
 
-tr > th{
+tr > th {
   padding-top: 20px;
 }
 
