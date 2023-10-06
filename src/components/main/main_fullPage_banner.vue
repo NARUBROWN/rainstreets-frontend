@@ -17,8 +17,14 @@
 
 <style scoped>
 #fullPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
   background: #005db4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #message {
@@ -33,16 +39,23 @@
 
 #button {
   width: 100px;
-  margin: 0 auto;
   text-align: center;
   border: 1px solid var(--blue-card-text);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+#button:hover {
+  background: var(--blue-card-text);
+}
+
+#button:hover a {
+  color: black;
+}
+
 #button > a {
-  text-decoration-line: none;
   color: var(--blue-card-text);
+  text-decoration-line: none;
   font-size: 15pt;
   font-weight: lighter;
 }
@@ -53,4 +66,16 @@
   font-size: 15pt;
   text-align: center;
 }
+
+
+@media all and (min-width:1025px) {
+  #message {
+    font-size: 45pt;
+  }
+
+  #productName {
+    font-size: 20pt;
+  }
+}
+
 </style>
